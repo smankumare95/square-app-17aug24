@@ -1,0 +1,39 @@
+<html>
+  <head>
+    <title>About Us</title>
+    <style>
+      * {
+        font-family: "Cambria";
+        font-size: 40px;
+      }
+    </style>
+  </head>
+
+  <body style="background-color: linen">
+    <center>
+      <nav
+        style="
+          width: 100%;
+          background-color: black;
+          display: flex;
+          justify-content: space-evenly;
+        "
+      >
+        <a style="text-decoration: none; color: white" href="index.html"
+          >Home</a
+        >
+        <a style="text-decoration: none; color: white" href="about.html"
+          >About Us</a
+        >
+      </nav>
+
+      <h1>Result Page</h1>
+      <div id="msg"></div>
+
+      <script>
+        var res = localStorage.getItem("result");
+        document.getElementById("msg").innerHTML = "Square = " + res;
+      </script>
+    </center>
+  </body>
+</html>
